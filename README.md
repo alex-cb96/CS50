@@ -44,6 +44,30 @@ Visualization:
 
 Create a bar plot using seaborn to visualize the distribution of sentiment categories.
 The plot provides insights into the overall sentiment distribution of the movie overviews.
+
+For wordcloud:
+Steps:
+Data Preparation:
+
+Import necessary libraries, including collections, WordCloud, pandas, and Matplotlib.
+Create or load a DataFrame with movie information, including titles and genres.
+Genre Analysis:
+
+Split genres and create a list of all genres using the str.split(', ').explode() method.
+Use the Counter class to count the frequency of each genre.
+Word Cloud Visualization:
+
+Create a WordCloud to visually represent the frequency of genres.
+Customize WordCloud parameters such as width, height, and background color.
+Display Word Cloud:
+
+Display the WordCloud using Matplotlib to provide a graphical representation of genre frequencies.
+Display Bar Plot:
+
+Create a bar plot to visualize the frequency of each genre.
+Customize plot configurations, including color, labels, and rotation for better visibility.
+
+
 #### DATASET SOURCE:
 https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows
 
