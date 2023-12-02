@@ -24,7 +24,26 @@ The useful information that I've managed to extract and visualize was:
 
 Used different visualization types such as bar charts, heat maps and word clouds.
 
-Sentiment analysis has been peformed using *"nltk"* library and helped to identify that most overviews has "negative" sentiment, a fact that is also confirmed by high number of Dramas in the list.
+Also, performed sentiment analysis on a DataFrame column containing movie overviews using the Natural Language Toolkit (NLTK) library. The goal is to categorize the sentiment of each movie overview into positive, neutral, or negative, and visualize the distribution of sentiment categories.
+
+Steps:
+Data Preparation:
+
+Import necessary libraries, including NLTK, pandas, seaborn, and matplotlib.
+Create or load a DataFrame with movie information, including titles and overviews.
+Sentiment Analysis:
+
+Initialize the Sentiment Intensity Analyzer from NLTK.
+Apply sentiment analysis to the 'Overview' column using the analyzer to calculate compound sentiment scores.
+Categorizing Sentiment:
+
+Map sentiment scores to categories (Positive, Neutral, Negative).
+Define conditions based on sentiment scores.
+Create a function to categorize sentiment and apply it to create a new column ('Sentiment_Category').
+Visualization:
+
+Create a bar plot using seaborn to visualize the distribution of sentiment categories.
+The plot provides insights into the overall sentiment distribution of the movie overviews.
 #### DATASET SOURCE:
 https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows
 
